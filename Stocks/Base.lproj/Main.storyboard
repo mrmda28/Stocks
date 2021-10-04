@@ -16,41 +16,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRr-6K-h3z">
-                                <rect key="frame" x="0.0" y="593" width="414" height="269"/>
+                                <rect key="frame" x="0.0" y="548.5" width="414" height="313.5"/>
                             </pickerView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-8F-jW9">
-                                <rect key="frame" x="117" y="160" width="180" height="180"/>
+                                <rect key="frame" x="127" y="160" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="MCh-9l-8Jr"/>
-                                    <constraint firstAttribute="width" constant="180" id="nHc-Cz-FCg"/>
+                                    <constraint firstAttribute="height" constant="160" id="MCh-9l-8Jr"/>
+                                    <constraint firstAttribute="width" constant="160" id="nHc-Cz-FCg"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symbol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQV-a3-byH">
-                                <rect key="frame" x="40" y="360" width="58" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="40" y="340" width="75.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWT-ge-FhP">
-                                <rect key="frame" x="40" y="400" width="123" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="40" y="380" width="136.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ov-tY-PJe">
-                                <rect key="frame" x="335" y="360" width="39" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="323.5" y="340" width="50.5" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="Pc8-Bs-3Bk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price Change" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIp-LI-5f3">
-                                <rect key="frame" x="271" y="400" width="103" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIp-LI-5f3">
+                                <rect key="frame" x="306" y="380" width="68" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="59" id="byJ-1i-7Vx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Fcu-ci-BYm">
-                                <rect key="frame" x="197" y="380" width="20" height="20"/>
+                                <rect key="frame" x="197" y="360" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -59,6 +65,7 @@
                             <constraint firstItem="rVh-8F-jW9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3a7-xt-u1W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nIp-LI-5f3" secondAttribute="trailing" constant="40" id="DBy-XD-bLf"/>
                             <constraint firstItem="iRr-6K-h3z" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IvW-7z-w8l"/>
+                            <constraint firstItem="0Ov-tY-PJe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OQV-a3-byH" secondAttribute="trailing" constant="143" id="Los-tW-Bap"/>
                             <constraint firstItem="rVh-8F-jW9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TYb-PI-7hk"/>
                             <constraint firstItem="OQV-a3-byH" firstAttribute="top" secondItem="rVh-8F-jW9" secondAttribute="bottom" constant="20" id="Ve3-Ec-I68"/>
                             <constraint firstItem="nIp-LI-5f3" firstAttribute="top" secondItem="rVh-8F-jW9" secondAttribute="bottom" constant="60" id="aCW-FF-Vdz"/>
@@ -67,8 +74,9 @@
                             <constraint firstItem="iRr-6K-h3z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fLn-vP-TWp"/>
                             <constraint firstItem="OQV-a3-byH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="fiR-cc-DV3"/>
                             <constraint firstItem="Fcu-ci-BYm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hdh-O4-bzA"/>
+                            <constraint firstItem="nIp-LI-5f3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xWT-ge-FhP" secondAttribute="trailing" constant="14" id="mQO-bJ-8sM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ov-tY-PJe" secondAttribute="trailing" constant="40" id="mqr-vy-Sgn"/>
-                            <constraint firstItem="iRr-6K-h3z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="tkj-8G-X96"/>
+                            <constraint firstItem="iRr-6K-h3z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="tkj-8G-X96"/>
                             <constraint firstItem="xWT-ge-FhP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="xxA-eF-RRY"/>
                             <constraint firstItem="0Ov-tY-PJe" firstAttribute="top" secondItem="rVh-8F-jW9" secondAttribute="bottom" constant="20" id="zw5-LE-dbT"/>
                         </constraints>
@@ -77,6 +85,7 @@
                     <navigationItem key="navigationItem" title="Stocks" id="tx6-TU-4H9"/>
                     <connections>
                         <outlet property="activityIndicator" destination="Fcu-ci-BYm" id="9aA-wa-Sxr"/>
+                        <outlet property="companyImage" destination="rVh-8F-jW9" id="hb5-6G-hTC"/>
                         <outlet property="companyNameLabel" destination="xWT-ge-FhP" id="l7A-ZN-wiR"/>
                         <outlet property="companyPickerView" destination="iRr-6K-h3z" id="Arq-i2-hTc"/>
                         <outlet property="priceChangeLabel" destination="nIp-LI-5f3" id="Tpy-HI-BXe"/>
